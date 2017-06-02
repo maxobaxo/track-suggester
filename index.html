@@ -4,18 +4,18 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/jquery-3.2.1.js"></script>
-    <title>Epicodus Track Oracle</title>
+    <title>Epicodus Oracle</title>
   </head>
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h2>Epicodus Track Oracle</h2>
+        <h1>The Epicodus Oracle</h1>
+        <h3>Not quite sure which track to pursue at Epicodus?</h4>
+        <h5>Try out our helpful track suggestion tool!</h5>
       </div>
 
       <div>
-        <h4>Not quite sure which track to pursue at Epicodus?</h4>
-        <h5>Try out our helpful track suggestion tool!</h5>
-        <p>Simply answer the questions below to the best of your ability, and our Track Oracle will tell you which of the below tracks you are destined to pursue. </p>
+        <p>Simply answer the questions below to the best of your ability, and the Epicodus Oracle will tell you which of the below tracks you are destined to pursue. </p>
       </div>
 
       <div id="track-menu">
@@ -63,6 +63,7 @@
           <div class="select-q">
             When considering a future employer, what size of a company would suit you best?
             <select class="form-control" id="co-size"></label>
+              <option></option>
               <option>Start-Up | 1-2 people</option>
               <option>Small Business | 10-30 people</option>
               <option>Medium Business | 50-100 people</option>
@@ -76,6 +77,7 @@
           <div class="select-q">
             If you painted on canvas and offered the finished piece to a friend, what would they most likely say to you?
             <select class="form-control" id="artsy"></label>
+              <option></option>
               <option>"Did you find that in the garbage?"</option>
               <option>"Keep your day job."</option>
               <option>"I'd put the art up in my house."</option>
@@ -88,6 +90,7 @@
           <div class="select-q">
             When did you develop an interest/aptitude for coding?
             <select class="form-control" id="code-age"></label>
+              <option></option>
               <option>Two minutes ago</option>
               <option>After a few years in a dead-end job</option>
               <option>College</option>
@@ -125,7 +128,7 @@
       </form>
 
       <div class="result" id="result">
-        <h4>Track Selected!</h4>
+        <h3>Track Selected!</h3>
         <p>Congratulations, young coding grasshopper! After carefully considering your answers, our Track Oracle suggests that you enroll in the <span id="track"><em></em></span> track!</p>
       </div>
 
