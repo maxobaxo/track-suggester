@@ -37,3 +37,16 @@
 .jumbo-text {
   vertical-align: middle;
 }
+
+#btn-margin {
+  width: 12.5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 1%;
+  border-radius: 8px;
+  background-color: #68B2B1
+}
+
+#ruby {
+  color: red;
+}
