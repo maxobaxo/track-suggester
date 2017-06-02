@@ -11,68 +11,68 @@ $(document).ready(function() {
     var firstName = $("input#first-name").val();
     $(".first-name").text(firstName);
 
-    $(".survey").fadeOut();
+    $("#first-name-well").hide();
 
     if (focus === undefined || coSize === undefined || artsy === undefined || codeAge === undefined || peewee === undefined) {
       alert("Please make sure to answer ALL the questions.");
 
     } else if (focus === "builder") {
-      $(".result").fadeOut();
+      $(".result").hide();
       $("#c-sharp").fadeIn();
     } else if (artsy >= 3) {
       if (focus === "design") {
-        $(".result").fadeOut();
+        $(".result").hide();
         $("#css").fadeIn();
       } else if (focus === "games") {
-        $(".result").fadeOut();
+        $(".result").hide();
         $("#c-sharp").fadeIn();
       } else if (coSize >= 3) {
-        $(".result").fadeOut();
+        $(".result").hide();
         $("#php").fadeIn();
       } else {
-        $(".result").fadeOut();
+        $(".result").hide();
         $("#ruby").fadeIn();
       }
     } else if (artsy < 3 && focus === "design") {
       if (codeAge >= 4) {
         if (coSize <= 2) {
-          $(".result").fadeOut();
+          $(".result").hide();
           $("#ruby").fadeIn();
         } else if (coSize > 2) {
-          $(".result").fadeOut();
+          $(".result").hide();
           $("#java").fadeIn();
         }
       } else if (codeAge < 4) {
-        $(".result").fadeOut();
+        $(".result").hide();
         $("#c-sharp").fadeIn();
       } else {
-        $(".result").fadeOut();
+        $(".result").hide();
         $("#enigma").fadeIn();
       }
     } else if (artsy < 3 || focus !== "design") {
       if (coSize > 2) {
-        $(".result").fadeOut();
+        $(".result").hide();
         $("#c-sharp").fadeIn();
       } else if (coSize < 2) {
-        $(".result").fadeOut();
+        $(".result").hide();
         $("#ruby").fadeIn();
       } else {
-        $(".result").fadeOut();
+        $(".result").hide();
         $("#php").fadeIn();
       }
     } else if (focus === "mobile") {
       if (peewee === false) {
-        $(".result").fadeOut();
+        $(".result").hide();
         $("#c-sharp").fadeIn();
       } else if (peewee === true) {
-        $(".result").fadeOut();
+        $(".result").hide();
         $("#java").fadeIn();
       } else {
-        $(".result").fadeOut();
+        $(".result").hide();
         $("php").fadeIn();
       }
     } else {
-      $(".result").fadeOut();
+      $(".result").hide();
       $("#enigma").fadeIn();
     }
   });
