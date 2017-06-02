@@ -8,8 +8,10 @@ $(document).ready(function() {
     var codeAge = $("#code-age").val();
     var peewee = $("input:radio[name=peewee]:checked").val();
 
+    if (focus === undefined || coSize === undefined || artsy === undefined || codeAge === undefined || peewee === undefined) {
+      alert("Please make sure to answer ALL the questions.");
 
-    if (focus === "builder") {
+    } else if (focus === "builder") {
       $(".result").hide();
       $("#c-sharp").show();
     } else if (artsy >= 3) {
