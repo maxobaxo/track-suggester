@@ -4,6 +4,12 @@
 
 .center {
   display: block;
+  margin: auto;
+  text-align: center;
+}
+
+#center {
+  display: block;
   text-align: center;
 }
 
