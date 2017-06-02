@@ -43,10 +43,23 @@
         </div>
       </div>
 
-      <form class="survey">
+      <form class="survey" id="survey-margin">
+        <div class="row">
+          <div class="col-xs-4">
+          </div>
+          <div class="col-xs-4">
+            <div class="form-group well">
+              <label for="first-name"></label>
+              <input type="text" class="form-control" placeholder="First Name" id="first-name">
+            </div>
+          </div>
+          <div class="col-xs-4">
+          </div>
+        </div>
+
         <div class="row">
           <div class="col-md-6">
-            <div class="QR">
+            <div class="QR well">
               <h4>Complete this sentence: "In the future, I would like to be...</h4>
               <div class="radio" id="job-focus">
                 <label>
@@ -73,8 +86,8 @@
                 </label>
               </div>
             </div>
-            <div class="QR">
-              <h4>True or False: You played little league baseball when I was a kid.</h4>
+            <div class="QR well">
+              <h4>True or False: You played little league baseball when you were a kid.</h4>
               <div class="radio" id="peewee">
                 <label>
                   <input type="radio" name="peewee" value="true">
@@ -97,7 +110,7 @@
           </div>
 
           <div class="col-md-6">
-            <div class="QS">
+            <div class="QS well">
               <h4>When considering a future employer, what size of a company would suit you best?</h4>
               <select class="form-control" id="co-size">
                 <option></option>
@@ -109,7 +122,7 @@
               </select>
             </div>
 
-            <div class="QS">
+            <div class="QS well">
               <h4>If you painted on canvas and offered the finished piece to a friend, what would they most likely say to you?</h4>
               <select class="form-control" id="artsy">
                 <option></option>
@@ -120,7 +133,7 @@
               </select>
             </div>
 
-            <div class="QS">
+            <div class="QS well">
               <h4>When did you develop an interest/aptitude for coding?</h4>
               <select class="form-control" id="code-age">
                 <option></option>
@@ -142,32 +155,32 @@
 
       <div class="result well" id="ruby">
         <h3>Ruby Track Selected!</h3>
-        <p>Congratulations, young coding grasshopper! After carefully considering your answers, our Track Oracle suggests that you enroll in the <em>Ruby/Rails</em> track!</p>
+        <p>Congratulations, <span class="first-name"></span>! After carefully considering your answers, our Track Oracle suggests that you enroll in the <em>Ruby/Rails</em> track!</p>
       </div>
 
       <div class="result well" id="php">
         <h3>PHP Track Selected!</h3>
-        <p>Congratulations, young coding grasshopper! After carefully considering your answers, our Track Oracle suggests that you enroll in the <em>PHP/React</em> track!</p>
+        <p>Congratulations, <span class="first-name"></span>! After carefully considering your answers, our Track Oracle suggests that you enroll in the <em>PHP/React</em> track!</p>
       </div>
 
       <div class="result well" id="java">
         <h3>Java Track Selected!</h3>
-        <p>Congratulations, young coding grasshopper! After carefully considering your answers, our Track Oracle suggests that you enroll in the <em>Java/Android</em> track!</p>
+        <p>Congratulations, <span class="first-name"></span>! After carefully considering your answers, our Track Oracle suggests that you enroll in the <em>Java/Android</em> track!</p>
       </div>
 
       <div class="result well" id="css">
         <h3>CSS Track Selected!</h3>
-        <p>Congratulations, young coding grasshopper! After carefully considering your answers, our Track Oracle suggests that you enroll in the <em>CSS/Design</em> track!</p>
+        <p>Congratulations, <span class="first-name"></span>! After carefully considering your answers, our Track Oracle suggests that you enroll in the <em>CSS/Design</em> track!</p>
       </div>
 
       <div class="result well" id="c-sharp">
         <h3>C# Track Selected!</h3>
-        <p>Congratulations, young coding grasshopper! After carefully considering your answers, our Track Oracle suggests that you enroll in the <em>C#/.NET</em> track!</p>
+        <p>Congratulations, <span class="first-name"></span>! After carefully considering your answers, our Track Oracle suggests that you enroll in the <em>C#/.NET</em> track!</p>
       </div>
 
       <div class="result well" id="enigma">
         <h3>You're an enigma!</h3>
-        <p>Congratulations, you have broken the mold. Even the omnipotent Epicodus Oracle cannot seem to figure you out.  It's possible you're simply so well-rounded, you'd excel in any language.... or fail in any language. In any case, best of luck!
+        <p>Congratulations, young grasshopper, you have broken the mold. Even the omnipotent Epicodus Oracle cannot seem to figure you out.  It's possible you're simply so well-rounded, you'd excel in any language.... or fail in any language. In any case, best of luck!
       </div>
 
 

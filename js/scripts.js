@@ -8,6 +8,9 @@ $(document).ready(function() {
     var codeAge = $("#code-age").val();
     var peewee = $("input:radio[name=peewee]:checked").val();
 
+    var firstName = $("input#first-name").val();
+    $(".first-name").text(firstName);
+
     if (focus === undefined || coSize === undefined || artsy === undefined || codeAge === undefined || peewee === undefined) {
       alert("Please make sure to answer ALL the questions.");
 

@@ -2,10 +2,18 @@
   display: none;
 }
 
+body {
+  background-color: #68B2B1;
+}
+
 .center {
   display: block;
   margin: auto;
   text-align: center;
+}
+
+#survey-margin {
+  margin: 1%;
 }
 
 #center {
@@ -44,7 +52,7 @@
   margin-bottom: 2%;
   padding: 1%;
   border-radius: 8px;
-  background-color: #68B2B1
+  background-color: #68B2B1;
 }
 
 #ruby {
