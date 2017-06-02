@@ -4,9 +4,137 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/jquery-3.2.1.js"></script>
-    <title>Epicodus Track Suggester</title>
+    <title>Epicodus Track Oracle</title>
   </head>
   <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h2>Epicodus Track Oracle</h2>
+      </div>
 
+      <div>
+        <h4>Not quite sure which track to pursue at Epicodus?</h4>
+        <h5>Try out our helpful track suggestion tool!</h5>
+        <p>Simply answer the questions below to the best of your ability, and our Track Oracle will tell you which of the below tracks you are destined to pursue. </p>
+      </div>
+
+      <div id="track-menu">
+        <ul>
+
+        </ul>
+      </div>
+
+      <form class="survey">
+        <div class="radio-q">
+          <div class="radio" id="job-focus">
+            <label for="">
+              <input type="radio" name="name" value="value1">
+            </label>
+          </div>
+          <div class="radio">
+            <label for="">
+              <input type="radio" name="name" value="value2">
+            </label>
+          </div>
+          <div class="radio">
+            <label for="">
+              <input type="radio" name="name" value="value3">
+            </label>
+          </div>
+          <div class="radio">
+            <label for="">
+              <input type="radio" name="name" value="value4">
+            </label>
+          </div>
+          <div class="radio">
+            <label for="">
+              <input type="radio" name="name" value="value5">
+            </label>
+          </div>
+        </div>
+
+        <div class="select-q">
+          <select class="form-control" id="co-size"></label>
+            <option></option>
+            <option></option>
+            <option></option>
+            <option></option>
+          </select>
+        </div>
+
+        <div class="select-q">
+          <select class="form-control" id="artsy"></label>
+            <option></option>
+            <option></option>
+            <option></option>
+            <option></option>
+          </select>
+        </div>
+
+        <div class="select-q">
+          <select class="form-control" id="co-size"></label>
+            <option></option>
+            <option></option>
+            <option></option>
+            <option></option>
+          </select>
+        </div>
+
+        <div class="radio-q">
+          <div class="radio" id="job-focus">
+            <label for="">
+              <input type="radio" name="name" value="value1">
+            </label>
+          </div>
+          <div class="radio">
+            <label for="">
+              <input type="radio" name="name" value="value2">
+            </label>
+          </div>
+          <div class="radio">
+            <label for="">
+              <input type="radio" name="name" value="value3">
+            </label>
+          </div>
+          <div class="radio">
+            <label for="">
+              <input type="radio" name="name" value="value4">
+            </label>
+          </div>
+          <div class="radio">
+            <label for="">
+              <input type="radio" name="name" value="value5">
+            </label>
+          </div>
+        </div>
+
+      </form>
+
+      <div class="result" id="result">
+        <h4>Track Selected!</h4>
+        <p>Congratulations, young coding grasshopper! After carefully considering your answers, our Track Oracle suggests that you enroll in the <span id="track"></span> track!</p>
+      </div>
+
+      <div class="result" id="ruby">
+
+      </div>
+
+      <div class="result" id="php">
+
+      </div>
+
+      <div class="result" id="java">
+
+      </div>
+
+      <div class="result" id="css">
+
+      </div>
+
+      <div class="result" id="c#">
+
+      </div>
+
+    </div>
   </body>
 </html>
