@@ -9,10 +9,10 @@ $(document).ready(function() {
     var peewee = $("input:radio[name=peewee]:checked").val();
 
 
-    if (focus === builder) {
+    if (focus === "builder") {
       $(".result").hide();
       $("#c-sharp").show();
-    } else if (artsy >= 3)
+    } else if (artsy >= 3) {
       if (focus === "design") {
         $(".result").hide();
         $("#css").show();
@@ -25,20 +25,23 @@ $(document).ready(function() {
       } else {
         $(".result").hide();
         $("#ruby").show();
+      }
     } else if (artsy < 3 && focus === "design") {
-      if (codeAge >= 4)
+      if (codeAge >= 4) {
         if (coSize <= 2) {
           $(".result").hide();
           $("#ruby").show();
         } else if (coSize > 2) {
           $(".result").hide();
           $("#java").show();
+        }
       } else if (codeAge < 4) {
         $(".result").hide();
         $("#c-sharp").show();
       } else {
         $(".result").hide();
         $("#enigma").show();
+      }
     } else if (artsy < 3 || focus !== "design") {
       if (coSize > 2) {
         $(".result").hide();
@@ -49,6 +52,7 @@ $(document).ready(function() {
       } else {
         $(".result").hide();
         $("#php").show();
+      }
     } else if (focus === "mobile") {
       if (peewee === false) {
         $(".result").hide();
@@ -59,6 +63,7 @@ $(document).ready(function() {
       } else {
         $(".result").hide();
         $("php").show();
+      }
     } else {
       $(".result").hide();
       $("#enigma").show();
