@@ -1,6 +1,6 @@
 $(document).ready(function() {
-  $(".survey").submit(function() {
-
+  $(".survey").submit(function(event) {
+    event.preventDefault();
 
     var focus = $("input:radio[name=job-focus]:checked").val();
     var coSize = parseInt($("#co-size").val());
