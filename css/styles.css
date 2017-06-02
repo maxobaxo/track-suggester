@@ -1,5 +1,13 @@
 .result {
   display: none;
+  width: 50%;
+  border: 2px solid black;
+  margin: auto;
+  text-align: center;
+}
+
+.result p {
+  text-align: left;
 }
 
 body {
