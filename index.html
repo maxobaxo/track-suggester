@@ -61,62 +61,64 @@
 
         <div class="Q">
           <div class="select-q">
+            When considering a future employer, what size of a company would suit you best?
             <select class="form-control" id="co-size"></label>
-              <option></option>
-              <option></option>
-              <option></option>
-              <option></option>
+              <option>Start-Up | 1-2 people</option>
+              <option>Small Business | 10-30 people</option>
+              <option>Medium Business | 50-100 people</option>
+              <option>Very Large Business | 100+ people</option>
+              <option>Global Domination Corporation | Too many to count</option>
             </select>
           </div>
         </div>
 
         <div class="Q">
           <div class="select-q">
+            If you painted on canvas and offered the finished piece to a friend, what would they most likely say to you?
             <select class="form-control" id="artsy"></label>
-              <option></option>
-              <option></option>
-              <option></option>
-              <option></option>
+              <option>"Did you find that in the garbage?"</option>
+              <option>"Keep your day job."</option>
+              <option>"I'd put the art up in my house."</option>
+              <option>"Watch out, Van Gogh!"</option>
             </select>
           </div>
         </div>
 
         <div class="Q">
           <div class="select-q">
+            When did you develop an interest/aptitude for coding?
             <select class="form-control" id="code-age"></label>
-              <option></option>
-              <option></option>
-              <option></option>
-              <option></option>
+              <option>Two minutes ago</option>
+              <option>After a few years in a dead-end job</option>
+              <option>College</option>
+              <option>High School</option>
+              <option>Early Adolescence</option>
+              <option>In utero</option>
             </select>
           </div>
         </div>
 
-        <div class="radio-q">
-          <div class="radio" id="job-focus">
-            <label for="">
-              <input type="radio" name="name" value="value1">
-            </label>
-          </div>
-          <div class="radio">
-            <label for="">
-              <input type="radio" name="name" value="value2">
-            </label>
-          </div>
-          <div class="radio">
-            <label for="">
-              <input type="radio" name="name" value="value3">
-            </label>
-          </div>
-          <div class="radio">
-            <label for="">
-              <input type="radio" name="name" value="value4">
-            </label>
-          </div>
-          <div class="radio">
-            <label for="">
-              <input type="radio" name="name" value="value5">
-            </label>
+        <div class="Q">
+          <div class="radio-q">
+            True or False: You played little league baseball when I was a kid.
+            <div class="radio" id="peewee">
+              <label>
+               <input type="radio" name="peewee" value="true">
+               True
+              </label>
+            </div>
+            <div class="radio">
+              <label >
+                <input type="radio" name="peewee" value="false">
+                False
+              </label>
+            </div>
+            <div class="radio">
+              <label >
+                <input type="radio" name="peewee" value="idk">
+                What's Baseball?
+              </label>
+            </div>
           </div>
         </div>
 
@@ -124,7 +126,7 @@
 
       <div class="result" id="result">
         <h4>Track Selected!</h4>
-        <p>Congratulations, young coding grasshopper! After carefully considering your answers, our Track Oracle suggests that you enroll in the <span id="track"></span> track!</p>
+        <p>Congratulations, young coding grasshopper! After carefully considering your answers, our Track Oracle suggests that you enroll in the <span id="track"><em></em></span> track!</p>
       </div>
 
       <div class="result" id="ruby">
