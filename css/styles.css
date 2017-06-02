@@ -1,3 +1,11 @@
+h1, em, li {
+  font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+em {
+  font-style: normal;
+}
+
 .result {
   display: none;
   width: 50%;
