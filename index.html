@@ -32,100 +32,91 @@
       </div>
 
       <form class="survey">
-        <div class="Q">
-          <div class="radio-q">
-            <h4>Complete this sentence: "In the future, I would like to be...</h4>
-            <div class="radio" id="job-focus">
-              <label>
-                <input type="radio" name="job-focus" value="games">
-                ...developing and designing video games."
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="job-focus" value="mobile">
-                ...creating the next great mobile app."              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="job-focus" value="design">
-                ...designing beautiful websites."
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="job-focus" value="builder">
-                ...building internal web applications for a large corporation."
-              </label>
-            </div>
+        <div class="QL">
+          <h4>Complete this sentence: "In the future, I would like to be...</h4>
+          <div class="radio" id="job-focus">
+            <label>
+              <input type="radio" name="job-focus" value="games">
+              ...developing and designing video games."
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="job-focus" value="mobile">
+              ...creating the next great mobile app."              </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="job-focus" value="design">
+              ...designing beautiful websites."
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="job-focus" value="builder">
+              ...building internal web applications for a large corporation."
+            </label>
           </div>
         </div>
 
-        <div class="Q">
-          <div class="select-q">
-            When considering a future employer, what size of a company would suit you best?
-            <select class="form-control" id="co-size">
-              <option></option>
-              <option value="1">Start-Up | 1-2 people</option>
-              <option value="2">Small Business | 10-30 people</option>
-              <option value="3">Medium Business | 50-100 people</option>
-              <option value="4">Very Large Business | 100+ people</option>
-              <option value="5">Global Domination Corporation | Too many to count</option>
-            </select>
+        <div class="QR">
+          <h4>When considering a future employer, what size of a company would suit you best?</h4>
+          <select class="form-control" id="co-size">
+            <option></option>
+            <option value="1">Start-Up | 1-2 people</option>
+            <option value="2">Small Business | 10-30 people</option>
+            <option value="3">Medium Business | 50-100 people</option>
+            <option value="4">Very Large Business | 100+ people</option>
+            <option value="5">Global Domination Corporation | Too many to count</option>
+          </select>
+        </div>
+
+        <div class="QR">
+          <h4>If you painted on canvas and offered the finished piece to a friend, what would they most likely say to you?</h4>
+          <select class="form-control" id="artsy">
+            <option></option>
+            <option value="1">"Did you find that in the garbage?"</option>
+            <option value="2">"Keep your day job."</option>
+            <option value="3">"I'd put the art up in my house."</option>
+            <option value="4">"Watch out, Van Gogh!"</option>
+          </select>
+        </div>
+
+        <div class="QL">
+          <h4>True or False: You played little league baseball when I was a kid.</h4>
+          <div class="radio" id="peewee">
+            <label>
+              <input type="radio" name="peewee" value="true">
+              True
+            </label>
+          </div>
+          <div class="radio">
+            <label >
+              <input type="radio" name="peewee" value="false">
+              False
+            </label>
+          </div>
+          <div class="radio">
+            <label >
+              <input type="radio" name="peewee" value="idk">
+              What's Baseball?
+            </label>
           </div>
         </div>
 
-        <div class="Q">
-          <div class="select-q">
-            If you painted on canvas and offered the finished piece to a friend, what would they most likely say to you?
-            <select class="form-control" id="artsy">
-              <option></option>
-              <option value="1">"Did you find that in the garbage?"</option>
-              <option value="2">"Keep your day job."</option>
-              <option value="3">"I'd put the art up in my house."</option>
-              <option value="4">"Watch out, Van Gogh!"</option>
-            </select>
-          </div>
+        <div class="QR">
+          <h4>When did you develop an interest/aptitude for coding?</h4>
+          <select class="form-control" id="code-age">
+            <option></option>
+            <option value="1">Two minutes ago</option>
+            <option value="2">After a few years in a dead-end job</option>
+            <option value="3">College</option>
+            <option value="4">High School</option>
+            <option value="5">Early Adolescence</option>
+            <option value="6">In utero</option>
+          </select>
         </div>
 
-        <div class="Q">
-          <div class="select-q">
-            When did you develop an interest/aptitude for coding?
-            <select class="form-control" id="code-age">
-              <option></option>
-              <option value="1">Two minutes ago</option>
-              <option value="2">After a few years in a dead-end job</option>
-              <option value="3">College</option>
-              <option value="4">High School</option>
-              <option value="5">Early Adolescence</option>
-              <option value="6">In utero</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="Q">
-          <div class="radio-q">
-            True or False: You played little league baseball when I was a kid.
-            <div class="radio" id="peewee">
-              <label>
-               <input type="radio" name="peewee" value="true">
-               True
-              </label>
-            </div>
-            <div class="radio">
-              <label >
-                <input type="radio" name="peewee" value="false">
-                False
-              </label>
-            </div>
-            <div class="radio">
-              <label >
-                <input type="radio" name="peewee" value="idk">
-                What's Baseball?
-              </label>
-            </div>
-          </div>
-        </div>
 
         <button type="submit" class="btn btn-success">Destiny Awaits</button>
 

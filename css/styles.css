@@ -6,3 +6,17 @@
   display: block;
   text-align: center;
 }
+
+.QL {
+  display: block;
+  margin: 1.5%;
+  float: left;
+  width: 45%;
+}
+
+.QR {
+  display: block;
+  margin: 1.5%;
+  float: right;
+  width: 45%;
+}
